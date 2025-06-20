@@ -31,4 +31,4 @@ jobs:
     - name: Create package
       run: dotnet pack PublishNugetTester --configuration Release
     - name: Push package
-      run: dotnet nuget push "PublishNugetTester/bin/Release/MonoGameLibrary.1.0.0.nupkg" --api-key ${{ secrets.GITHUBTOKEN }} --source "github"
+      run: dotnet nuget push "PublishNugetTester/bin/Release/PublishNugetTester.1.0.0.nupkg" --api-key ${{ secrets.GITHUBTOKEN }} --source "github"
